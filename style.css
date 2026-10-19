@@ -1,0 +1,319 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1220;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #60a5fa;
+  margin-bottom: 35px;
+}
+
+/* INTRO */
+
+.hero {
+  background: #111c30;
+  border: 1px solid #26354c;
+  border-radius: 22px;
+  padding: 45px 25px;
+  text-align: center;
+}
+
+.warning-icon {
+  font-size: 70px;
+  animation: bounce 1.5s infinite;
+}
+
+.label,
+.section-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #fb7185;
+  font-size: clamp(32px, 6vw, 58px);
+  margin: 18px 0;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero h2 {
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.rickroll {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 25px auto;
+  border-radius: 15px;
+  border: 2px solid #334155;
+}
+
+.safe-message {
+  background: #123b33;
+  border: 1px solid #226b55;
+  border-radius: 12px;
+  color: #86efac;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.safe-message p {
+  font-weight: normal;
+  color: #d1fae5;
+  font-size: 14px;
+}
+
+.intro {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin: 25px auto;
+  max-width: 550px;
+}
+
+.main-button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 15px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.main-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* FARESIGNALER */
+
+.tips-section {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 30px 22px;
+  margin-top: 30px;
+}
+
+.tips-section h2 {
+  font-size: 26px;
+}
+
+.section-description {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.tip {
+  background: #334155;
+  border-radius: 12px;
+  padding: 17px;
+  margin-top: 14px;
+  border: 1px solid #475569;
+  transition: border-color 0.2s;
+}
+
+.tip:hover {
+  border-color: #fbbf24;
+}
+
+.tip summary {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.tip[open] summary {
+  margin-bottom: 15px;
+}
+
+.wrong-box {
+  background: #3b2431;
+  border-left: 4px solid #fb7185;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.wrong-box strong {
+  color: #fda4af;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.right-box {
+  background: #123b33;
+  border-left: 4px solid #4ade80;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.right-box strong {
+  color: #86efac;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.wrong-box p,
+.right-box p {
+  color: white;
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
+.tip-explanation {
+  color: #cbd5e1;
+  line-height: 1.8;
+  padding: 4px;
+}
+
+/* SIKKERHEDSRÅD */
+
+.advice {
+  background: #15352f;
+  border: 1px solid #27745c;
+  padding: 30px 25px;
+  border-radius: 18px;
+  margin-top: 30px;
+}
+
+.advice h2 {
+  color: #86efac;
+}
+
+.advice-item {
+  background: #1b4439;
+  padding: 13px;
+  margin-top: 10px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+/* AFSLUTNING */
+
+.ending {
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 30px;
+}
+
+.ending p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.ending-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #86efac;
+  margin-top: 25px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #334155;
+  padding: 25px;
+  color: #94a3b8;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+footer p {
+  letter-spacing: normal;
+}
+
+/* ANIMATIONER */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 10px;
+  }
+
+  .hero,
+  .tips-section,
+  .advice {
+    padding: 25px 15px;
+  }
+
+  .hero h2 {
+    font-size: 19px;
+  }
+}
+
+.footer-contact {
+  background: #15352f;
+  border: 1px solid #27745c;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.footer-contact h3 {
+  color: #86efac;
+  margin-top: 0;
+}
+
+.footer-contact p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-signature strong {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-signature p:last-child {
+  color: #60a5fa;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
