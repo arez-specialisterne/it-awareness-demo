@@ -7,7 +7,7 @@ const tips = [
     right:
       "Sammenlign navnet med det korrekte navn.",
     explanation:
-      "Lagde du mærke til det manglende 'e'? " +
+      "Lagde du mærke til det manglende 'e'Tvede ? " +
       "Selv en lille stavefejl i navnet på en person, " +
       "du kender, kan være et tegn på phishing. " +
       "Husk dog, at et korrekt navn ikke beviser, " +
